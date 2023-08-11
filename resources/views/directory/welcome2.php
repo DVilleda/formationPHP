@@ -9,7 +9,7 @@
     <h1>Bienvenue</h1>
     <p>Mon site en Laravel</p>
     <?php
-    echo $id;
+    var_dump($id);
     ?>
 </body>
 
