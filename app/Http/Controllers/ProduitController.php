@@ -29,6 +29,7 @@ class ProduitController extends BaseController
         $line = $request->input('line');
         $price = $request->input('achatPrix');
         $msrp = $request->input('ventePrix');
+        $code = htmlspecialchars($code);
         DB::insert(
             'INSERT INTO products (productCode,productName,productLine,buyPrice,MSRP) 
         VALUES (:code,:nom,:line,:price,:msrp)',
